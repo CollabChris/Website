@@ -7,6 +7,7 @@ gem 'rails', '3.2.8'
 group :development do 
 	gem 'sqlite3'
 	gem 'rspec-rails', '2.11.0' 	
+	gem 'annotate', '2.5.0'
 end
 
 
@@ -27,6 +28,8 @@ group :test do
 end
 
 gem 'jquery-rails'
+
+gem 'bcrypt-ruby', '3.0.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
