@@ -8,6 +8,16 @@ require 'rspec/autorun'
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+#Returns the full title on a per-page basis
+def full_title(page_title) 
+	base_title = "Collaborate"
+	if page_title.empty?
+		base_title
+	else
+		"#{base_title} | #{page_title}"
+	end
+end
+	
 RSpec.configure do |config|
   # ## Mock Framework
   #
